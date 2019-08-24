@@ -1,191 +1,97 @@
-# Sleek
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-sleek.svg)](https://badge.fury.io/rb/jekyll-sleek) [![Build Status](https://travis-ci.org/janczizikow/sleek.svg?branch=master)](https://travis-ci.org/janczizikow/sleek) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/janczizikow/sleek)
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-A modern [Jekyll](https://jekyllrb.com/) theme focused on speed performance & SEO best practices.
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-![Sleek Jekyll Theme](./sleek.jpg)
+## 🚀 Quick start
 
-## Features
+1.  **Create a Gatsby site.**
 
-* Compatible with [Github Pages](https://pages.github.com/)
-* Minimal, responsive and speed performance optimized
-* SEO friendly, with help of [Jekyll SEO Plugin](https://github.com/jekyll/jekyll-seo-tag)
-* Easy [Google Tag Manager](https://tagmanager.google.com/) Integration
-* Support for [Disqus](https://disqus.com/) comments
-* Form submissions with [Formspree](#formspree)
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-[Preview Demo](https://janczizikow.github.io/sleek/)
+    ```sh
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-## Installation
+1.  **Start developing.**
 
-### System Requirements
+    Navigate into your new site’s directory and start it up.
 
-To use this project, you'll need the following things on your local machine:
+    ```sh
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-#### Jekyll
+1.  **Open the source code and start editing!**
 
-```shell
-gem install jekyll
-```
+    Your site is now running at `http://localhost:8000`!
 
-#### NodeJS (8 or greater)
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-Download and open the [NodeJS installer](https://nodejs.org/en/)
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-#### Gulp CLI (optional, but recommended)
+## 🧐 What's inside?
 
-```shell
-npm install --global gulp-cli
-```
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-### Up & Running
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-1. [Fork the repo](https://github.com/janczizikow/sleek/fork)
-2. Clone or download the repo into directory of your choice: `git clone https://github.com/your-github-username/sleek.git`
-3. Inside the directory run `bundle install` and `npm install`
-4. If you want to use [gulp.js](https://gulpjs.com/) run `gulp` or `npm start`
-    * if you don't want to use gulp you can run `bundle exec jekyll serve` instead
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-#### Installing to existing jekyll project
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-Add this line to your Jekyll site's `Gemfile`:
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-```ruby
-gem "jekyll-sleek"
-```
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-And add this line to your Jekyll site's `_config.yml`:
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-```yaml
-theme: jekyll-sleek
-```
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-And then execute:
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-    $ bundle
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-Or install it yourself as:
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-    $ gem install jekyll-sleek
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-## File Structure Overview
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-```bash
-sleek
-├── _includes	               # theme includes
-├── _js	                       # javascript files (by default jquery will be included with the scripts inside)
-├── _layouts                   # theme layouts (see below for details)
-├── _pages                     # pages folder (empty by default)
-├── _posts                     # blog posts
-├── _sass                      # Sass partials
-├── assets
-|  ├── css	               # minified css files
-|  ├── img                     # images and icons used for the template
-|  └── js		               # bundled and minified files from _js folder
-├── _config.yml                # sample configuration
-├── gulpfile.js                # gulp tasks (tasks autorunner)
-├── index.md                   # sample home page (blog page)
-└── package.json               # gulp tasks
-```
+12. **`README.md`**: A text file containing useful reference information about your project.
 
-## Usage
+## 🎓 Learning Gatsby
 
-You can modify the theme by changing the settings in `_config.yml`.
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-### Posts
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-Create a new Markdown file such as 2017-01-13-my-post.md in _post folder. Configure YAML Front Matter (stuff between `---`):
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-```yaml
----
-layout: post # needs to be post
-title: Getting Started with Sleek # title of your post
-featured-img: sleek #optional - if you want you can include hero image
----
-```
+## 💫 Deploy
 
-#### Images
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-In case you want to add a hero image to the post, apart from changing featured-img in YAML, you also need to add the image file to the project. To do so, just upload an image in .jpg format to `_img` folder. The name must before the .jpg file extension has to match with featured-img in YAML. Next, run `gulp img` from command line to generate optimized version of the image and all the thumbnails. You have to restart the jekyll server to see the changes.
-
-Sleek uses [Lazy Sizes](https://github.com/aFarkas/lazysizes). Lazy Loader for loading images. Check the link for more info. Lazy Sizes doesnt’t require any configuration and it’s going to be included in your bundled js file.
-
-### Pages
-
-The home page is located under index.md file. To change the content or design you have to edit the default.html file in `_layouts` folder.
-
-In order to add a new page, create a new html or markdown file under root directory or inside _pages folder. To add a link in navigation add it in `_config.yml`:
-
-```yaml
-# THEME SETTINGS
-navigation: # Navigation links
-  - {name: 'Home', link: '/'}
-  - {name: 'About', link: '/about'}
-  - {name: 'Contact', link: '/contact'}
-```
-
-`name` is the text that will be shown and link, well, it's a link.
-
-### Site configuration
-
-Sleek comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) to know how to set it up.
-
-Additionally, in `_config.yml` you can find custom theme settings under `# THEME SETTINGS` comment. Here's a brief overview of those custom settings:
-
-- `navigation` - collection of links that will be shown in the header
-- `tagline` - text that will be displayed on the homepage under the heading.
-- `hero_img` - background image of the homepage hero section
-
-Other settings usually enable/disable certain feature, and are discussed with the next sections.
-
-### Google Tag Manager
-
-To enable Google Tag Manager, add the uncomment the following line in `_config.yml`:
-
-```yaml
-google_tag_manager: GTM-XXXXXXX
-```
-
-Replace `GTM-XXXXXXX` with your Google Tag Manager Container ID.
-
-**Note** by default GTM tracking snippet will be also included in development environment.
-
-Google Tag Manager was chosen for this project as it's more flexible than Google Analytics, and it can be used to add GA to your site.
-
-### Disqus
-
-To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to `_config.yml`:
-
-```yaml
-disqus:
-  shortname: my_disqus_shortname
-```
-
-### Formspree
-
-To use [Formspree](https://formspree.io/) with your email address, you need to change the following:
-
-Change `your-email@domain.com` email in `_config.yml`
-
-```yaml
-email: your-email@domain.com
-```
-
-You can check if it works by simply submitting the form.
-
-If you have a Formspree Gold Account, you can take advantage of using AJAX to submit form. To do so, uncomment last function in `_js/scripts.js` and run `gulp js`. Now the form will be submitted asynchronously, without leaving the page.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at [https://github.com/janczizikow/sleek](https://github.com/janczizikow/sleek). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install` and `npm install`.
-
-The theme is setup just like a normal Jekyll site! Check out [file structure overview](#file-structure-overview) for details. To test the theme, run `gulp` and open your browser at `http://localhost:3000`. This starts a Jekyll server using the theme. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to the theme and to the content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+<!-- AUTO-GENERATED-CONTENT:END -->

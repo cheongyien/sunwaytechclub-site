@@ -1,0 +1,22 @@
+.mobile-container {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  max-width: 960;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mobile-avatar {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  .mobile-menu {
+    margin: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .mobile-logo {
+    float: none;
+    margin: 0 auto;
+  }
+}
