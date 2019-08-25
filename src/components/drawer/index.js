@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from "gatsby"
+import { Link } from "react-router-dom"
 import Drawer from '@material-ui/core/Drawer';
 import pages from '../header/navbar/pages'
-import logo from "src/assets/images/logo.png"
+import logo from "assets/images/logo.png"
 
-import useGlobal from 'src/redux/store'
+import useGlobal from 'redux/store'
 import './index.scss'
 
 export default (props) => {

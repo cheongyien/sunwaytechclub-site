@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
-import logo from "src/assets/images/logo.png"
-import menu from "src/assets/images/menu.png"
-import avatar from "src/assets/images/avatar.png"
-import useGlobal from 'src/redux/store'
+import { Link } from "react-router-dom"
+import logo from "assets/images/logo.png"
+import menu from "assets/images/menu.png"
+import avatar from "assets/images/avatar.png"
+import useGlobal from 'redux/store'
 import './mobile.scss'
 
 export default (props) => {

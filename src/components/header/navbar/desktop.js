@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
-import Logo from "src/assets/images/logo"
+import { Link } from "react-router-dom"
+import Logo from "assets/images/logo"
 import pages from './pages'
-import useGlobal from 'src/redux/store'
+import useGlobal from 'redux/store'
 import "./desktop.scss"
 
 export default () => {

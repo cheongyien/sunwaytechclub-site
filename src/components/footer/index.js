@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
-import slack from 'src/assets/images/footer/ic_slack.png'
-import telegram from 'src/assets/images/footer/ic_telegram.png'
+import slack from 'assets/images/footer/ic_slack.png'
+import telegram from 'assets/images/footer/ic_telegram.png'
 
 export default () => (
     <>
