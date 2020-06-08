@@ -9,15 +9,30 @@ We split the team into 2, component builders and page builders to have a clearer
 
 ## 🧱 Component builders <a name="component"></a>
 
+A component builder is responsible for:
+
+1. Building the User Interface (e.g. button, checkbox, etc)
+2. Handling the effect and animation of the component
+3. Exposing good API to the page builder
+
 If you are Component team (Team that creates all frequently used components):
 
-This is the bencemark that we are looking into:
+These are the bencemarks that we are looking into:
 
 [https://svelte-mui.ibbf.ru/button](https://svelte-mui.ibbf.ru/button)
+[https://sveltematerialui.com/demo/chips](https://sveltematerialui.com/demo/chips)
 
-Create all the components inside `src/components` root folder.
+Do note to create all the components inside `src/components` root folder.
 
 ## 🏠 Page builders <a name="page_building"></a>
+
+A page builder is responsible for:
+
+1. Building the layout of the page
+2. Handling the behavior of the page (on click, etc)
+3. Handling the API call to the backend
+4. Dealing with navigation
+5. Ensuring the mobile responsiveness
 
 If you are Page builders (Team that creates all the pages)
 
