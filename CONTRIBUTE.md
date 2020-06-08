@@ -1,5 +1,7 @@
 # Contribute to Sunway Tech Club website
 
+We split the team into 2, component team and page building team to have a clearer role and better efficiency.
+
 ## 📝 Table of Contents
 
 - [Component Team](#component)
