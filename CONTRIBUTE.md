@@ -7,7 +7,7 @@ We split the team into 2, component team and page building team to have a cleare
 - [Component Team](#component)
 - [Page building Team](#page_building)
 
-## Component Team <a name="component"></a>
+## 🧱 Component Team <a name="component"></a>
 
 If you are Component team (Team that creates all frequently used components):
 
@@ -17,7 +17,7 @@ This is the bencemark that we are looking into:
 
 Create all the components inside `src/components` root folder.
 
-## Page building Team <a name="page_building"></a>
+## 🏠 Page building Team <a name="page_building"></a>
 
 If you are Page building Team (Team that creates all the pages):
 
