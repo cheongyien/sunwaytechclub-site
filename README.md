@@ -80,4 +80,4 @@ To generate all the bundled files in `/public` folder.
 
 ## 🎉 Contribute <a name = "Contributing"></a>
 
-To contribute (yay thanks in advance), see <a href="../CONTRIBUTE.md">here</a>
+To contribute (yay thanks in advance), see [here](https://github.com/sunwaytechclub/sunwaytechclub-site/blob/master/CONTRIBUTE.md)
