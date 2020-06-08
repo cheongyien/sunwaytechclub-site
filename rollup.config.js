@@ -1,10 +1,14 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import alias from '@rollup/plugin-alias';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import path from 'path';
+
 
 const production = !process.env.ROLLUP_WATCH;
+const projectRootDir = path.resolve(__dirname);
 
 export default {
 	input: 'src/main.js',
@@ -46,7 +50,15 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+
+		// alias to pages and components
+		alias({
+			entries: [
+				{ find: '@components', replacement: path.resolve(projectRootDir, 'src/components') },
+				{ find: '@pages', replacement: path.resolve(projectRootDir, 'src/pages') }
+			]
+		})
 	],
 	watch: {
 		clearScreen: false
