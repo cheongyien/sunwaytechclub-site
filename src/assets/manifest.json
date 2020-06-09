@@ -1,0 +1,16 @@
+{
+  "name": "Sunway Tech Club Official Website",
+  "short_name": "STC | Website",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait",
+  "theme_color": "#1FB57B",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/assets/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

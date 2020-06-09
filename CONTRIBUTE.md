@@ -1,5 +1,11 @@
 # Contribute to Sunway Tech Club website
 
+To start a development server, run:
+
+```
+npm run watch
+```
+
 We split the team into 2, component builders and page builders to have a clearer role and better efficiency.
 
 ## 📝 Table of Contents
