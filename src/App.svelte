@@ -24,14 +24,7 @@
 
   onMount(() => {
     router.listen();
-    addEventListener("replacestate", track);
-    addEventListener("pushstate", track);
-    addEventListener("popstate", track);
-
     return () => {
-      removeEventListener("replacestate", track);
-      removeEventListener("pushstate", track);
-      removeEventListener("popstate", track);
       router.unlisten();
     };
   });
