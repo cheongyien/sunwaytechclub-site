@@ -9,6 +9,9 @@
   function draw(m, params) {
     params = params || {};
     Route = m.default || m;
+
+    // track on google analytic for every page changed
+    track();
   }
 
   function track(obj) {
